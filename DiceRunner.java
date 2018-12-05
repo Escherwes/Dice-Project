@@ -6,12 +6,12 @@ public class DiceRunner{
 		Die die2 = new Die();
 		ArrayList<Die> hold = new ArrayList<>();
 
-		while(die1.getValue != 1){
+		while(die1.getValues != 1){
 			die1.roll();
 			System.out.println(die1);
 		}
 
-		while(die2.getValue != 1){
+		while(die2.getValues != 1){
 			die2.roll();
 			System.out.println(die2);
 		}
