@@ -26,8 +26,9 @@ public class DiceHolder{
 	public void shake(){
 
 		for(int i = 0; i<list.size(); i++){
+			die.roll();
 			int rand = (int)(Math.random()*list.size())+1;
-			list.add(list.remove(rand));
+			list.add(rand, die);
 		}
 
 	}
