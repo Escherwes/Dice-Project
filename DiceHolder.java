@@ -26,16 +26,20 @@ public class DiceHolder{
 	public void shake(){
 
 		for(int i = 0; i<list.size(); i++){
-			die.roll();
-			int rand = (int)(Math.random()*list.size())+1;
-			list.add(rand, die);
+			list.get(i).roll();
 		}
 
 	}
 
 	public String toString(){
 
-		return die+"\n";
+		String life = "";
+
+		for(int i = 0; i<list.size(); i++){
+			life += list.get(i)+"\n";
+		}
+
+		return life+"\n";
 
 	}
 
